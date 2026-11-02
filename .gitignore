@@ -1,17 +1,23 @@
-# Variáveis de ambiente e credenciais
+# Ambiente virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Configurações locais e segredos
 .env
 
-# Ambientes virtuais Python
-venv/
-.venv/
-
-# Cache do Python
-__pycache__/
-*.pyc
-*.pyo
-
-# Arquivos do VS Code
+# VS Code
 .vscode/
 
-# Arquivos temporários
-*.log
+# Dados gerados localmente
+data/bronze/*.json
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
